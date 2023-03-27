@@ -13,23 +13,26 @@ class Program
                 Console.Write(matrix[top, i] + " ");
             }
             top++;
+            Console.WriteLine();
             for (int i = top; i <= bottom; i++){
                 Console.Write(matrix[i, right] + " ");
             }
             right--;
+            Console.WriteLine();
             if (top <= bottom){
             for (int i = right; i >= left; i--){
                 Console.Write(matrix[bottom, i] + " ");
              }
             bottom--;
             }
+            Console.WriteLine();
             if (left <= right){
             for (int i = bottom; i >= top; i--){
                 Console.Write(matrix[i, left] + " ");
              }
             left++;
             }
-
+            Console.WriteLine();
         }
     }
     static void Main(string[] args){
